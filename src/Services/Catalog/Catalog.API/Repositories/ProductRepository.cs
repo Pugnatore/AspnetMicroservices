@@ -65,7 +65,8 @@ namespace Catalog.API.Repositories
 
             DeleteResult deleteResult = await _context.Products.DeleteOneAsync(filter);
 
-            return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
+            return deleteResult.IsAcknowledged 
+                   && deleteResult.DeletedCount > 0;
         }
     }
 }
