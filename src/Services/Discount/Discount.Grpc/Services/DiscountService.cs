@@ -6,6 +6,7 @@ using Grpc.Core;
 
 namespace Discount.Grpc.Services
 {
+    //NESTE CASO COMO E SERVER HERDAMOS DE DiscountProtoServiceClient
     public class DiscountService : DiscountProtoService.DiscountProtoServiceBase
     {
         private readonly IDiscountRepository _repository;
