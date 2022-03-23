@@ -12,7 +12,7 @@ namespace Ordering.Application.Behaviours
     {
         private readonly ILogger _logger;
 
-        public UnhandledExceptionBehaviour(ILogger logger)
+        public UnhandledExceptionBehaviour(ILogger<TRequest> logger)
         {
             _logger = logger;
         }

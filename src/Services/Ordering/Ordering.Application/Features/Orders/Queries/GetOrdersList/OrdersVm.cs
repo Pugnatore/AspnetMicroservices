@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
 {
     //WORKS LIKE A DTO OBJECT
-    public class OrdersVm
+    public class 
+        OrdersVm
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
