@@ -82,6 +82,7 @@ namespace Basket.API.Controllers
                 return BadRequest();
             }
 
+            //Este mapeamento é importante para sabermos para tiparmos o consumer e assim conseguirmos consumir o evento
             var eventMessage = _mapper.Map<BasketCheckoutEvent>(basketCheckout);
             eventMessage.TotalPrice=basket.TotalPrice; //Not necessary
             await _publishEndpoint.Publish(eventMessage);
