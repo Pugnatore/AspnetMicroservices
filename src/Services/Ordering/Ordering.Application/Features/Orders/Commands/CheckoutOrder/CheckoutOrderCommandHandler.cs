@@ -42,7 +42,8 @@ namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 
             try
             {
-                await _emailService.SendEmail(email);
+                //await _emailService.SendEmail(email);
+                return;
             }
             catch (Exception e)
             {
